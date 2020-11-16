@@ -1,0 +1,171 @@
+* { 
+    box-sizing: border-box;
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header {
+    background: var(--btn-static);
+}
+
+
+header nav {
+    margin-left: auto;
+    line-height: 60px;
+    display: inline-block;
+
+}
+
+.nav-link a {
+    color: transparent;
+    width: 25vh;
+    height: 25px;
+    margin: 20px 20px 20px auto;
+    border-bottom-right-radius:  30px;
+    border-bottom-left-radius:  30px;
+    border-top-left-radius:  30px;
+    border-top-right-radius: 30px;
+}
+
+
+#logo {
+    color:var(--bg-white);
+    font-size: 2em;
+
+
+}
+
+div .nav-link {
+    display: flex;
+    justify-content: center;
+}
+
+div.nav-link a {
+    margin-left: 10%;
+    margin-right: auto;
+    background: var(--btn-pressed);
+}
+
+div.nav-link a:hover {
+    margin-left: 10%;
+    margin-right: auto;
+    background: var(--btn-hover);
+}
+
+
+div .profile {
+    position: relative;
+
+}
+
+
+div #ava {
+    position: absolute;
+    top: 12px;
+    bottom: 10px;
+    margin-left: auto;
+    margin-bottom: 0;
+    width: 32px;
+    height: 32px;
+}
+
+div #name {
+    margin-left: 2px;
+    color:var(--bg-white);
+    background: var(--btn-hover);
+    padding: 13px 20px 13px 30px;
+    border-bottom-right-radius:  20px;
+    border-bottom-left-radius:  20px;
+    border-top-left-radius:  20px;
+    border-top-right-radius: 20px;
+}
+
+
+div #btn {
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    left: 90px;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+
+}
+
+body { 
+    display: grid;
+    grid-template-areas:
+        "header header header "
+        "left main right" 
+        "footer footer footer";
+    grid-template-columns: auto minmax(500px, 1200px) 1fr;
+    grid-template-rows: 60px auto 60px;
+}
+/* привязка html к template-areas: */
+header {
+    grid-area: header;
+    background: var(--btn-static);;
+}
+#left-aside {
+    grid-area: left;
+    background: var(--bg-gray);
+}
+main {
+    grid-area: main;
+    background: var(--bg-gray);
+}
+
+footer {
+    grid-area: footer;
+    background: #FF4E00;
+}
+
+main {
+    display: grid;
+    grid-template:
+        "image title" /* можно задать размер 1го ряда */
+        "specifications reviews" /* можно задать размер 2го ряда */
+        ". reviews" /* можно задать размер 3го ряда */
+        ". reviews" /* можно задать размер 5го ряда */
+        "similar similar" 200px /* размер 5го ряда */
+        / 1fr 2fr; /* размеры колонок от 1ой до последней */
+
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-template-rows: auto auto auto auto 200px; */
+}
+
+.image {
+    grid-area: image;
+}
+.title {
+    grid-area: title;
+}
+
+.specifications {
+    grid-area: specifications;
+}
+
+.reviews {
+    grid-area: reviews;
+}
+
+.similar {
+    grid-area: similar;
+    display: flex;
+}

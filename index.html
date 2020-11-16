@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/flex-grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/stylesheet.css">
+	<title>TASK-5</title>
+</head>
+<body>
+	<header>
+		<nav class="container flex-row">
+			<div class="col-1 col-md-1">
+				<a id="logo" class="text-bold" href="#">ОЛИМП</a>
+			</div>
+			<div class="col-10 col-md-10 flex-row">
+				<div class="nav-link">
+					<a class="nav" href="#">link-1</a>
+					<a class="nav" href="#">link-2</a>
+					<a class="nav" href="#">link-3</a>
+				</div>
+			</div>
+			<div class="col-1 col-md-1">
+				<div class="profile">
+				<img id="ava" src="img/before.png">	
+				<a id="name" href="#">Артемий</a>
+				<img id="btn" src="img/after.png">
+				</div>
+			</div>
+		</nav>
+	</header>
+	<aside></aside>
+	<main class="container flex-row">
+		<section id="left">
+				<div class="left-section">
+				<form action="#" method="post">
+					<h3 class="text-bold">Ваши профессиональные навыки:</h3>
+						<input type="text" placeholder="Начните вводить здесь">
+					<h3 class="text-bold">Оцените навык по предложенной методике:</h3>
+					<p class="gray-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. At ut et nemo quasi, itaque eveniet iure nostrum hic eos voluptates autem dolore esse deleniti placeat molestias quae sint quo numquam repellendus perferendis consequatur incidunt quia unde. Doloremque numquam consectetur itaque cupiditate, deserunt et libero, aliquid quam saepe omnis, soluta. Provident autem ullam, eius.</p>
+						<input type="range" class="range" min="1" max="7" value="4" step="1">
+						<a class="skill-add-btn" href="#">+</a><span class="skill-add-text gray-color">Добавить еще один навык</span>				
+				</form>
+				<div class="two-btn">
+					<a id="save" href="#">Сохранить</a>
+					<a id="cancel" href="#">Отмена</a>
+				</div>
+				</div>	
+		</section>
+		<section id="right">
+				<div class="right-section">
+					<div class="flex-column">
+					<a href="#">Личная информация</a>
+					<a href="#">Основное образование</a>
+					<a href="#">Дополнительное образование</a>
+					<a href="#">Ключевые навыки</a>
+					<a href="#">Профессиональные навыки</a>
+					<a href="#">Обо мне</a>
+					</div>
+				</div>
+		</section>
+	</main>
+<footer>(c) 2020-2021 IFMO</footer>
+</body>
+</html>
